@@ -1,0 +1,253 @@
+[
+  {
+    "id": "RPAN-NLP",
+    "name": "RPAN - NLP",
+    "division": "RNY",
+    "routeCode": "E",
+    "lengthKm": 75,
+    "lineType": "Single Line",
+    "totalStations": 20,
+    "stationDetails": {
+      "block": 14,
+      "halts": 6
+    },
+    "mps": {
+      "RPAN-HMY": "100 kmph",
+      "HMY-NLP": "100 kmph"
+    },
+    "systemOfWorking": "Absolute Block System (EI)",
+    "bpac": "Available across section",
+    "electrified": false,
+    "rulingGradient": {
+      "RPAN-BVU": "1 in 175 (Up)",
+      "KTPR-SOB": "1 in 150 (Up)"
+    },
+    "elephantCorridor": [
+      "RPAN-BVU",
+      "BVU-DQL",
+      "NBX-HML"
+    ],
+    "restrictions": "Curve restrictions between RPAN-BVU (NS-60), Multiple sharp-curve speed restrictions"
+  },
+  {
+    "id": "HMY-NHLN",
+    "name": "HMY - NHLN",
+    "division": "RNY",
+    "routeCode": "E",
+    "lengthKm": 19.41,
+    "lineType": "Single Line without Mid-Block",
+    "totalStations": 3,
+    "stationList": [
+      "HMY",
+      "GMTO",
+      "NHLN"
+    ],
+    "mps": "100 kmph",
+    "systemOfWorking": "Absolute Block, BPAC + EI",
+    "bpac": "Available",
+    "electrified": false,
+    "rulingGradient": {
+      "HMY-GMTO": "1 in 160 (Up)"
+    },
+    "elephantCorridor": [
+      "HMY-GMTO"
+    ],
+    "restrictions": "NS-60 to NS-95 curves, Elephant movement restriction at night (18:00-05:00)"
+  },
+  {
+    "id": "GUP-BLPA-AYU",
+    "name": "GUP - BLPA - AYU",
+    "division": "RNY",
+    "routeCode": "E",
+    "lengthKm": 84.84,
+    "lineType": "Single Line",
+    "totalStations": 7,
+    "stationDetails": {
+      "block": 7,
+      "halts": 0
+    },
+    "mps": {
+      "GUP-ALMG": "90 kmph",
+      "ALMG-BLPA": "80 kmph",
+      "BLPA-AYU": "90 kmph"
+    },
+    "systemOfWorking": "Absolute Block",
+    "bpac": "Available from AYU to ALMG (EI)",
+    "electrified": false,
+    "rulingGradient": {
+      "GUP-ALMG": "1 in 205"
+    },
+    "elephantCorridor": [],
+    "restrictions": "BCMR-AYU: NS-45 due to trespassing risk"
+  },
+  {
+    "id": "NBQ-RNY",
+    "name": "NBQ - RNY",
+    "division": "RNY",
+    "routeCode": "D",
+    "lengthKm": 109.35,
+    "lineType": "Mixed (DL + SL)",
+    "lineDetails": "Double Line: NBQ-SBE, PBL-NLV; Single Line: SBE-PBL, NLV-RNY",
+    "totalStations": null,
+    "mps": {
+      "NBQ-SBE-RNY": "110 kmph",
+      "BJF-SBE (Up)": "90 kmph",
+      "PBL-NLV (Up)": "90 kmph"
+    },
+    "systemOfWorking": "All stations EI",
+    "bpac": "Available",
+    "electrified": true,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": "DTX-NBQ: 60/110 kmph limits in patches"
+  },
+  {
+    "id": "RNY-GHY",
+    "name": "RNY - GHY",
+    "division": "RNY",
+    "routeCode": "D",
+    "lengthKm": 47.52,
+    "lineType": "Twin single line + single line mix",
+    "totalStations": 7,
+    "stationList": [
+      "RNY",
+      "KDKN",
+      "BIZ",
+      "CGS",
+      "AGT",
+      "KYQ",
+      "GHY"
+    ],
+    "mps": {
+      "RNY-CGS": "110 kmph",
+      "CGS-AGT": "110 kmph",
+      "GHY-AGT": "75 kmph"
+    },
+    "systemOfWorking": "Absolute Block",
+    "systemDetails": "EI at RNY, KDKN, BIZ, AGT; RRI at KYQ, GHY",
+    "bpac": "KYQ-RNY + UFSBI on parts",
+    "electrified": true,
+    "rulingGradient": {
+      "RNY-AGT": "1 in 200 (Up)",
+      "KYQ-GHY": "1 in 150 (Up)"
+    },
+    "elephantCorridor": [],
+    "restrictions": "RNY-KDKN: NS-65 (points in curve), BIZ-CGS: NS-60 (trespassing)"
+  },
+  {
+    "id": "DDNI-MNDP",
+    "name": "DDNI - MNDP",
+    "division": "RNY",
+    "routeCode": "E",
+    "lengthKm": 19.02,
+    "lineType": "Single Line",
+    "totalStations": 3,
+    "mps": "65 kmph",
+    "systemOfWorking": "Absolute Block, BPAC + EI at both ends",
+    "bpac": "Available",
+    "electrified": true,
+    "rulingGradient": "1 in 150",
+    "elephantCorridor": [],
+    "restrictions": "NS-30 near cutting zone (risk of slope failure)"
+  },
+  {
+    "id": "JPE-NCBD-NCB",
+    "name": "JPE - NCBD - NCB",
+    "division": "APDJ",
+    "routeCode": "E",
+    "lengthKm": 88.7,
+    "lineType": "Single Line",
+    "totalStations": 10,
+    "stationDetails": {
+      "block": 8,
+      "halts": 2
+    },
+    "mps": "100 kmph",
+    "systemOfWorking": "Absolute Block",
+    "bpac": "Available between JPE-CAPG",
+    "electrified": false,
+    "rulingGradient": "MHBA-CAPG (Up)",
+    "elephantCorridor": [],
+    "restrictions": "MYGD Y-leg: NS-50 (sharp curve), CAPG-NCB: NS-65 (4° curve)"
+  },
+  {
+    "id": "KIR-KDPR",
+    "name": "KIR - KDPR",
+    "division": "KIR",
+    "routeCode": "",
+    "lengthKm": 29.53,
+    "lineType": "",
+    "totalStations": null,
+    "mps": "",
+    "systemOfWorking": "",
+    "bpac": "",
+    "electrified": false,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": ""
+  },
+  {
+    "id": "KIR-MFA",
+    "name": "KIR - MFA",
+    "division": "KIR",
+    "routeCode": "",
+    "lengthKm": 34.61,
+    "lineType": "",
+    "totalStations": null,
+    "mps": "",
+    "systemOfWorking": "",
+    "bpac": "",
+    "electrified": false,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": ""
+  },
+  {
+    "id": "BOE-RDP",
+    "name": "BOE - RDP",
+    "division": "KIR",
+    "routeCode": "",
+    "lengthKm": 53.61,
+    "lineType": "",
+    "totalStations": null,
+    "mps": "",
+    "systemOfWorking": "",
+    "bpac": "",
+    "electrified": false,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": ""
+  },
+  {
+    "id": "NJP-APDJ-SMTA",
+    "name": "NJP - APDJ - SMTA",
+    "division": "APDJ",
+    "routeCode": "",
+    "lengthKm": 181.12,
+    "lineType": "",
+    "totalStations": null,
+    "mps": "",
+    "systemOfWorking": "",
+    "bpac": "",
+    "electrified": false,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": ""
+  },
+  {
+    "id": "APDJ-BXT",
+    "name": "APDJ - BXT",
+    "division": "APDJ",
+    "routeCode": "",
+    "lengthKm": 72.34,
+    "lineType": "",
+    "totalStations": null,
+    "mps": "",
+    "systemOfWorking": "",
+    "bpac": "",
+    "electrified": false,
+    "rulingGradient": null,
+    "elephantCorridor": [],
+    "restrictions": ""
+  }
+]
