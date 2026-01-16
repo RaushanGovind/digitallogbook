@@ -37,21 +37,21 @@ const Settings = () => {
 
     useEffect(() => {
         if (activeTab === 'sections' && user?.cmsId) {
-            fetch(`http://localhost:5000/api/user-sections/${user.cmsId}`)
+            fetch(`/api/user-sections/${user.cmsId}`)
                 .then(res => res.json())
                 .then(data => setManualSections(data))
                 .catch(err => console.error(err));
         }
 
         if (activeTab === 'appearance' || activeTab === 'routes' || activeTab === 'calculator') {
-            fetch('http://localhost:5000/api/stations')
+            fetch('/api/stations')
                 .then(res => res.json())
                 .then(data => setAllStations(data))
                 .catch(err => console.error(err));
         }
 
         if (activeTab === 'routes' || activeTab === 'calculator') {
-            fetch('http://localhost:5000/api/junctions')
+            fetch('/api/junctions')
                 .then(res => res.json())
                 .then(data => setJunctions(data))
                 .catch(err => console.error(err));
@@ -63,7 +63,7 @@ const Settings = () => {
         setIsExploring(true);
         setSectionPath(null);
         try {
-            const res = await fetch(`http://localhost:5000/api/route?from=${sectionFrom}&to=${sectionTo}`);
+            const res = await fetch(`/api/route?from=${sectionFrom}&to=${sectionTo}`);
             const data = await res.json();
             if (res.ok) {
                 setSectionPath(data);
@@ -83,8 +83,8 @@ const Settings = () => {
 
         try {
             const url = editingId
-                ? `http://localhost:5000/api/user-sections/${editingId}`
-                : 'http://localhost:5000/api/user-sections';
+                ? `/api/user-sections/${editingId}`
+                : '/api/user-sections';
 
             const method = editingId ? 'PUT' : 'POST';
 
@@ -116,7 +116,7 @@ const Settings = () => {
     const handleDeleteSection = async (id) => {
         if (!window.confirm('Are you sure you want to delete this section?')) return;
         try {
-            await fetch(`http://localhost:5000/api/user-sections/${id}`, { method: 'DELETE' });
+            await fetch(`/api/user-sections/${id}`, { method: 'DELETE' });
             setManualSections(manualSections.filter(s => s._id !== id));
         } catch (err) {
             alert("Failed to delete section");
@@ -139,7 +139,7 @@ const Settings = () => {
         setRouteOptions(null);
 
         try {
-            const res = await fetch(`http://localhost:5000/api/route?from=${calcFrom}&to=${calcTo}`);
+            const res = await fetch(`/api/route?from=${calcFrom}&to=${calcTo}`);
             const data = await res.json();
 
             if (res.ok) {

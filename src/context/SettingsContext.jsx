@@ -77,7 +77,7 @@ export const SettingsProvider = ({ children }) => {
                     : { preferences: user.preferences };
 
                 try {
-                    await fetch(`http://localhost:5000/api/users/${user.cmsId}/preferences`, {
+                    await fetch(`/api/users/${user.cmsId}/preferences`, {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(body)

@@ -18,7 +18,7 @@ const StationSearchInput = ({ label, value, onChange, placeholder, required, sho
     // Fetch all stations once on mount
     useEffect(() => {
         setIsLoading(true);
-        fetch('http://localhost:5000/api/stations')
+        fetch('/api/stations')
             .then(res => res.json())
             .then(data => {
                 setAllStations(data);
